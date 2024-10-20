@@ -140,6 +140,14 @@ class DetailScreen extends StatelessWidget {
                 const SizedBox(
                   height: 16,
                 ),
+                Text(
+                  candi.description,
+                  style: const TextStyle(fontSize: 16),
+                  textAlign: TextAlign.justify,
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
               ],
             ),
           ),
