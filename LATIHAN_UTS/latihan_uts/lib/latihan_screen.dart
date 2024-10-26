@@ -194,35 +194,51 @@ class LatihanScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Colors.grey[200]),
-                child:  Padding(
-                  padding: EdgeInsets.all(16),
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
                   child: Column(children: [
-                    Row(
+                    const Row(
                       children: [
                         Text("Alamat",
-                            style:
-                                TextStyle(color: Colors.black, fontSize: 20s)),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                            )),
                       ],
                     ),
-                    Row(
+                    const Row(
                       children: [
                         Text("Jl. Rajawali",
                             style: TextStyle(color: Colors.black)),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Container(
-
-                    ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          color: Colors.red[500],
+                        ),
+                        width: double.infinity,
+                        height: 50,
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Lihat Map",
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        )),
                   ]),
                 ),
               ),
