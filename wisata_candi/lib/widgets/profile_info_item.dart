@@ -23,7 +23,28 @@ class ProfileInfoItem extends StatelessWidget {
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width / 3,
-        )
+          child: Row(
+            children: [
+              Icon(icon, color: iconColor),
+              const SizedBox(width: 8),
+              Text(
+                label,
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
+        ),
+        Expanded(
+          child: Text(
+            ': $value',
+            style: const TextStyle(fontSize: 18),
+          ),
+        ),
+        if (showEditIcon)
+          InkWell(
+            onTap: onEditPressed,
+            child: const Icon(Icons.edit),
+          ),
       ],
     );
   }
