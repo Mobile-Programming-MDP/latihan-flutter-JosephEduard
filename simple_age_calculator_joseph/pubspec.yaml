@@ -1,4 +1,4 @@
-name: advanced_quiz_app_joseph
+name: simple_age_calculator_joseph
 description: "A new Flutter project."
 publish_to: "none"
 version: 0.1.0
@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^1.2.2
 
 dev_dependencies:
   flutter_test:
